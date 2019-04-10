@@ -6,7 +6,6 @@
         <title>Will Brueske - DataViz</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -17,15 +16,15 @@
         <div class="wrapper">
             <nav class="navbar navbar-expand-sm navbar-light fixed-top">
                 <div class="navigator">
-                    <a class="navbar-brand" href="index.html">Will Brueske</a>
-                    
+                    <a class="navbar-brand" href="https://wbrueske.github.io/">Will Brueske</a>
+
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ml-sm-auto">
-                            <li class="nav-item active"><a class="nav-link" href="index.html">Portfolio</a></li>
+                            <li class="nav-item active"><a class="nav-link" href="https://wbrueske.github.io/">Portfolio</a></li>
                             <li class="nav-item"><a class="nav-link" href="mailto:wbrueske@live.com">wbrueske@live.com</a></li>
                         </ul>
                     </div>
@@ -37,13 +36,15 @@
                 <div class="col-lg-3 pl-lg-5" style="position: relative">
                     <div id="bio-panel">
                         <img id="bio-image" src="https://avatars0.githubusercontent.com/u/43975093?s=460&v=4">
-                        <h1>Will Brueske</h1>
-                        <h2>Data Visualizer</h2>
-                        <ul>
-                            <li><a href="http://bit.ly/wb_github" target="_blank">GitHub</a></li>
-                            <li><a href="http://bit.ly/wb_linkedin" target="_blank">LinkedIn</a></li>
-                            <li><a href="mailto:wbrueske@live.com">wbrueske@live.com</a></li>
-                        </ul>
+                        <div id="bio-text-container">
+                            <h1>Will Brueske</h1>
+                            <h2>Data Visualizer</h2>
+                            <ul>
+                                <li><a href="http://bit.ly/wb_github" target="_blank">GitHub</a></li>
+                                <li><a href="http://bit.ly/wb_linkedin" target="_blank">LinkedIn</a></li>
+                                <li><a href="mailto:wbrueske@live.com">wbrueske@live.com</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <div id="projects-column" class="col-lg-9 pr-lg-5">
@@ -52,28 +53,30 @@
                         <hr>
                     </div>
                     <div class="project-card clearfix">
-                        <h2>Earthquakes</h2>
-                        <img src="static/images/Earthquakes.jpg">
-                        <p>Recent earthquakes plotted on a global map.  Utilizes GeoJSON data from earthquake.usgs.gov to plot with Leaflet.js and Mapbox.</p>
+                        <a href="https://wbrueske.github.io/Earthquake-GeoMapping/"><h2>Earthquake GeoMapping</h2></a>
+                        <a href="https://wbrueske.github.io/Earthquake-GeoMapping/"><img src="static/images/Earthquakes.png"></a>
+                        <p>Recent earthquakes plotted on a global map.  Size and color indicate magnitude.  Each earthquake marker can be clicked to bring up additional information.</p>
                         <hr>
                     </div>
                     <div class="project-card clearfix">
-                        <h2>Adventurously</h2>
-                        <img src="static/images/Adventurously.jpg">
+                        <a href="https://wbrueske.github.io/Health-Risks-vs-Demographics/"><h2>Health Risks vs Demographics</h2></a>
+                        <a href="https://wbrueske.github.io/Health-Risks-vs-Demographics/"><img src="static/images/HealthRisks.png"></a>
+                        <p>Interactive scatter plot where axis labels can be clicked to change the plot to show different health risks and demographics of US states.</p>
+                        <hr>
+                    </div>
+                    <div class="project-card clearfix">
+                        <a href="https://thawing-wave-56122.herokuapp.com/" target="_blank"><h2>Adventurously</h2></a>
+                        <a href="https://thawing-wave-56122.herokuapp.com/" target="_blank"><img src="static/images/Adventurously.png"></a>
                         <p>Web-based portal of climate data.  Features an interactive dashboard that contains a choropleth of average temperatures for the last century, and allows users to compare data from two states.  Utilizes a RESTful API, and has all data available for viewing and searching.</p>
+                        <p>I was primarily responsible for the interactive chorpleth and overall web design.</p>
+                        <p>We had an unfortunately late realization that since the data that we used was categorized as yearly, all data was averaged—including maximum and minimum temperatures.  Thus the visualizations only display average maximum, average minimum, and average average temperatures for each year.  If we had more time, it would have been nice to get the monthly datasets to more accurately display the high and low temperatures.</p>
                         <hr>
                     </div>
                     
                     <div class="project-card clearfix">
-                        <h2>Earthquakes</h2>
-                        <img src="static/images/Earthquakes.jpg">
-                        <p>Recent earthquakes plotted on a global map.  Utilizes GeoJSON data from earthquake.usgs.gov to plot with Leaflet.js and Mapbox.</p>
-                        <hr>
-                    </div>
-                    <div class="project-card clearfix">
-                        <h2>Earthquakes</h2>
-                        <img src="static/images/Earthquakes.jpg">
-                        <p>Recent earthquakes plotted on a global map.  Utilizes GeoJSON data from earthquake.usgs.gov to plot with Leaflet.js and Mapbox.</p>
+                        <h2>Latitude vs X</h2>
+                        <img src="static/images/Lat_vs_MaxTemp.png">
+                        <p>A Jupyter Notebook that utilizes the openweathermap.org API to get weather data from almost 9,000 random cities across the globe.  The data is then plotted with MatPlotLib to find any correlations between latitude and weather characteristics.</p>
                         <hr>
                     </div>
                 </div>
