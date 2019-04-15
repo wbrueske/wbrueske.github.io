@@ -91,14 +91,13 @@ footer .container {
     margin: 0 auto;
 }
 
-.project-card h1 {
+.project-card h1, 
+.project-card h2, 
+.project-card h6, 
+.project-card p {
     padding-left: 10px;
     padding-right: 10px;
-}
-
-.project-card h2 {
-    padding-left: 10px;
-    padding-right: 10px;
+    clear: left;
 }
 
 .project-card img {
@@ -108,13 +107,21 @@ footer .container {
     padding: 10px;
 }
 
-.project-card p {
-    padding: 10px;
-    /* overflow: auto; */
-}
-
 .project-card hr {
     clear: both;
+}
+
+.project-card ul {
+    padding: 0;
+    clear: left;
+    overflow: hidden;
+}
+
+.project-card li {
+    list-style: none;
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 
