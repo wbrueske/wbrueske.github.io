@@ -1,6 +1,4 @@
-<!DOCTYPE html>
 <html lang="en">
-
     <head>
         <meta charset="utf-8">
         <title>Will Brueske - DataViz</title>
@@ -18,11 +16,11 @@
                 <div class="navigator">
                     <a class="navbar-brand" href="https://wbrueske.github.io/">Will Brueske</a>
 
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                 
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="navbar-collapse collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ml-sm-auto">
                             <li class="nav-item active"><a class="nav-link" href="https://wbrueske.github.io/">Portfolio</a></li>
                             <li class="nav-item"><a class="nav-link" href="mailto:wbrueske@live.com">wbrueske@live.com</a></li>
@@ -35,10 +33,10 @@
             <div class="row">
                 <div class="col-lg-3 pl-lg-5" style="position: relative">
                     <div id="bio-panel">
-                        <img id="bio-image" src="https://avatars0.githubusercontent.com/u/43975093?s=460&v=4">
+                        <img id="bio-image" src="https://avatars0.githubusercontent.com/u/43975093?s=460&amp;v=4">
                         <div id="bio-text-container">
                             <h1>Will Brueske</h1>
-                            <h2>Data Visualizer</h2>
+                            <h2>Front End Developer</h2>
                             <ul>
                                 <li><a href="http://bit.ly/wb_github" target="_blank">GitHub</a></li>
                                 <li><a href="http://bit.ly/wb_linkedin" target="_blank">LinkedIn</a></li>
@@ -53,6 +51,65 @@
                         <hr>
                     </div>
                     <div class="project-card clearfix">
+                        <a href="https://safe-fortress-25227.herokuapp.com/predictor.html"><h2>Clever-Audio</h2></a>
+                        <a href="https://safe-fortress-25227.herokuapp.com/predictor.html"><img src="static/images/Clever-Audio.png"></a>
+                        <ul>
+                            <li><a href="https://safe-fortress-25227.herokuapp.com/predictor.html">Deployed App</a></li>
+                            <li><a href="https://github.com/kd017/clever-audio">GitHub Repository</a></li>
+                        </ul>
+                        <p>
+                            Machine learning model that predicts Grammy winners from songs in Spotify’s database.  I was personally responsible for the Predictor page (where I put my amateur graphic design skills to the test) and overall web design.  Everything was completed in two weeks, so Bootstrap was used for rapid web development.
+                        </p>
+                        <h6>Technologies Used:</h6>
+                        <ul>
+                            <li>JavaScript</li>
+                            <li>jQuery</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Bootstrap</li>
+                            <li>Python</li>
+                            <li>Spotipy</li>
+                            <li>Pandas</li>
+                            <li>Tensorflow</li>
+                            <li>SciKitLearn</li>
+                            <li>Flask</li>
+                            <li>SQLAlchemy</li>
+                            <li>Splinter</li>
+                            <li>Flassgr</li>
+                            <li>Keras</li>
+                            <li>BeautifulSoup</li>
+                        </ul>
+                        <h6>Contributors:</h6>
+                        <ul>
+                            <li>Akash Brown</li>
+                            <li>Kishore Dubagunta</li>
+                            <li>Mohammed Musa</li>
+                            <li>Joleen Sterner</li>
+                        </ul>
+                        <hr>
+                    </div>
+                    <div class="project-card clearfix">
+                        <a href="https://wbrueske.github.io/Citi-Bike-Analysis/"><h2>Citi Bike Analysis</h2></a>
+                        <a href="https://wbrueske.github.io/Citi-Bike-Analysis/"><img src="static/images/CitiBike.png"></a>
+                        <ul>
+                            <li><a href="https://wbrueske.github.io/Citi-Bike-Analysis/">Deployed Analysis</a></li>
+                            <li><a href="https://github.com/wbrueske/Citi-Bike-Analysis">GitHub Repository</a></li>
+                        </ul>
+                        <p>
+                            Tableau analysis of the last year of Citi Bike travel data.  Data was cleaned and aggregated with Pandas, then visualized with Tableau dashboards and stories embedded into a web page, and accompanied by an analysis.
+                        </p>
+                        <h6>Technologies Used:</h6>
+                        <ul>
+                            <li>Python</li>
+                            <li>Pandas</li>
+                            <li>Tableau</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Bootstrap</li>
+                        </ul>
+                        <hr>
+                    </div>
+                    <div class="project-card clearfix">
                         <a href="https://wbrueske.github.io/Earthquake-GeoMapping/"><h2>Earthquake GeoMapping</h2></a>
                         <a href="https://wbrueske.github.io/Earthquake-GeoMapping/"><img src="static/images/Earthquakes.png"></a>
                         <ul>
@@ -62,7 +119,7 @@
                         <p>
                             Recent earthquakes plotted on a global map.  Size and color indicate magnitude.  Each earthquake marker can be clicked to bring up additional information.
                         </p>
-                        <h6>Languages & Libraries Used:</h6>
+                        <h6>Technologies Used:</h6>
                         <ul>
                             <li>JavaScript</li>
                             <li>D3.js</li>
@@ -84,7 +141,7 @@
                         <p>
                             Interactive scatter plot where axis labels can be clicked to change the plot to show different health risks and demographics of US states.
                         </p>
-                        <h6>Languages & Libraries Used:</h6>
+                        <h6>Technologies Used:</h6>
                         <ul>
                             <li>JavaScript</li>
                             <li>D3.js</li>
@@ -111,7 +168,7 @@
                         <p>
                             We had an unfortunately late realization that since the data that we used was categorized as yearly, all data was averaged—including maximum and minimum temperatures.  Thus the visualizations only display average maximum, average minimum, and average average temperatures for each year.  If we had more time, it would have been nice to get the monthly datasets to more accurately display the high and low temperatures.
                         </p>
-                        <h6>Languages & Libraries Used:</h6>
+                        <h6>Technologies Used:</h6>
                         <ul>
                             <li>JavaScript</li>
                             <li>D3.js</li>
@@ -127,9 +184,9 @@
                             <li>Flask</li>
                             <li>SQLite</li>
                             <li>SQLAlchemy</li>
-                            <li>splinter</li>
+                            <li>Splinter</li>
                             <li>DataTables</li>
-                            <li>flasgger</li>
+                            <li>Flasgger</li>
                         </ul>
                         <h6>Contributors:</h6>
                         <ul>
@@ -151,7 +208,7 @@
                         <p>
                             A Jupyter Notebook that utilizes the openweathermap.org API to get weather data from over 8,000 random cities across the globe.  The data is then plotted with MatPlotLib to find any correlations between latitude and weather characteristics.
                         </p>
-                        <h6>Languages & Libraries Used:</h6>
+                        <h6>Technologies Used:</h6>
                         <ul>
                             <li>Python</li>
                             <li>Pandas</li>
@@ -164,11 +221,12 @@
                 </div>
             </div>
         </div>
-    </body>
+
     <footer class="footer py-2">
         <div class="container">
             <span><a class="text-muted" href="mailto:wbrueske@live.com">wbrueske@live.com</a></span>
         </div>
     </footer>
 
+    </body>
 </html>

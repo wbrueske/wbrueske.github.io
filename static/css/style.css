@@ -265,7 +265,7 @@ footer .container {
     }
 }
 
-@media (max-width: 340px) {
+@media (max-width: 360px) {
     #bio-panel {
         padding-bottom: 1px;
     }
